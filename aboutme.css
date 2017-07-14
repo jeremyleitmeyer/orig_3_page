@@ -1,0 +1,105 @@
+ul {
+    list-style-type: none;
+    background-color: aliceblue;
+	overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+	float: left;
+}
+
+li a {
+	display: block;
+	color: black;
+	text-align: center;
+	margin: 15px;
+	/*padding: 15px 15px;*/
+	text-decoration: none;
+}
+
+
+li a:hover {
+    background-color: gray;
+    color: white;
+}
+
+.centering {
+	display: block;
+	margin: 0 auto;
+	margin-top: 25px;
+	width: 900px;
+}
+
+.img-circle {
+    border-radius: 50%;
+}
+
+.color {
+	background-color: aliceblue;
+}
+
+.text-left {
+	margin-left: 20px;
+	text-align: left;
+	border: 3px solid black;
+	width: 350px;
+	float: left;
+}
+
+.text-right {
+	margin-right: 20px;
+	text-align: left;
+	border:	3px solid black;
+	width: 350px;
+	float: right;
+}
+
+h1 {
+	font-family: "Courier New";
+}
+
+h3 {
+	text-align: center;
+	font-family: "Courier New";
+}
+
+p {
+	margin: 10px;
+
+}
+
+.boom {
+	animation-name: flyabout;
+	animation-duration: 4s;
+	animation-iteration-count: 1;
+}
+
+.bottom_nav {
+	margin-top: 20px;
+	clear: left;
+	display: block;
+}
+
+@keyframes flyabout {
+	from { opacity: 0; }
+	to { opacity: 1; }
+		
+}
+
+@media (max-width: 480px) { 
+
+	.text-right, .text-left, .move {
+		clear:	left;
+		float: left;
+		margin-left: 20px;
+		margin-top: 10px;
+	}
+	.boom {
+		float: left;
+		clear: left;
+		margin-left: 80px;
+		margin-top: 10px;
+	}
+}
