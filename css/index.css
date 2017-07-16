@@ -42,7 +42,7 @@ li a:hover {
 
 .text-left {
 	margin-left: 20px;
-	text-align: left;
+	text-align: center;
 	border: 3px solid black;
 	width: 350px;
 	float: left;
@@ -50,7 +50,7 @@ li a:hover {
 
 .text-right {
 	margin-right: 20px;
-	text-align: left;
+	text-align: center;
 	border:	3px solid black;
 	width: 350px;
 	float: right;
@@ -89,6 +89,9 @@ p {
 }
 
 @media (max-width: 480px) { 
+	/*.break {
+		display: none;
+	}*/
 
 	.text-right, .text-left, .move {
 		clear:	left;
@@ -96,10 +99,23 @@ p {
 		margin-left: 20px;
 		margin-top: 10px;
 	}
+
 	.boom {
 		float: left;
 		clear: left;
 		margin-left: 80px;
 		margin-top: 10px;
+	}
+}
+
+/*@media (max-width: 689px) {
+	.color {
+		background-color: yellow;
+	}
+}*/
+
+@media (max-width: 1000px) {
+	.color {
+		background-color: orange;
 	}
 }
